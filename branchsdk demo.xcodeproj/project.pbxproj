@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17342E582E325DDB00D55E97 /* BranchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 17342E572E325DDB00D55E97 /* BranchSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		17342E482E325D0B00D55E97 /* branchsdk demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "branchsdk demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17342E582E325DDB00D55E97 /* BranchSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "branchsdk demo";
 			packageProductDependencies = (
+				17342E572E325DDB00D55E97 /* BranchSDK */,
 			);
 			productName = "branchsdk demo";
 			productReference = 17342E482E325D0B00D55E97 /* branchsdk demo.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 17342E3F2E325D0B00D55E97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				17342E562E325DDB00D55E97 /* XCRemoteSwiftPackageReference "ios-branch-sdk-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 17342E492E325D0B00D55E97 /* Products */;
 			projectDirPath = "";
@@ -261,6 +270,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17342E562E325DDB00D55E97 /* XCRemoteSwiftPackageReference "ios-branch-sdk-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BranchMetrics/ios-branch-sdk-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17342E572E325DDB00D55E97 /* BranchSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17342E562E325DDB00D55E97 /* XCRemoteSwiftPackageReference "ios-branch-sdk-spm" */;
+			productName = BranchSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17342E402E325D0B00D55E97 /* Project object */;
 }
