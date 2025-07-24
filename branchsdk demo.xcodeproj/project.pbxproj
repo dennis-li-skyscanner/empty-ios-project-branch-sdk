@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		17342E582E325DDB00D55E97 /* BranchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 17342E572E325DDB00D55E97 /* BranchSDK */; };
+		17342E792E32640F00D55E97 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17342E782E32640F00D55E97 /* CoreServices.framework */; };
+		17342E7B2E32641600D55E97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17342E7A2E32641600D55E97 /* SystemConfiguration.framework */; };
+		17342E7D2E32641E00D55E97 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17342E7C2E32641E00D55E97 /* WebKit.framework */; };
+		17342E7F2E32642300D55E97 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17342E7E2E32642300D55E97 /* CoreSpotlight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17342E482E325D0B00D55E97 /* branchsdk demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "branchsdk demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17342E782E32640F00D55E97 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		17342E7A2E32641600D55E97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		17342E7C2E32641E00D55E97 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		17342E7E2E32642300D55E97 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -27,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17342E7F2E32642300D55E97 /* CoreSpotlight.framework in Frameworks */,
+				17342E7D2E32641E00D55E97 /* WebKit.framework in Frameworks */,
+				17342E7B2E32641600D55E97 /* SystemConfiguration.framework in Frameworks */,
+				17342E792E32640F00D55E97 /* CoreServices.framework in Frameworks */,
 				17342E582E325DDB00D55E97 /* BranchSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				17342E4A2E325D0B00D55E97 /* branchsdk demo */,
+				17342E772E32640E00D55E97 /* Frameworks */,
 				17342E492E325D0B00D55E97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +61,17 @@
 				17342E482E325D0B00D55E97 /* branchsdk demo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		17342E772E32640E00D55E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17342E7E2E32642300D55E97 /* CoreSpotlight.framework */,
+				17342E7C2E32641E00D55E97 /* WebKit.framework */,
+				17342E7A2E32641600D55E97 /* SystemConfiguration.framework */,
+				17342E782E32640F00D55E97 /* CoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
